@@ -24,7 +24,10 @@ nagu näha tegin teise rea ka kohe järgi
 */
 
 if ($bool == False){
-  echo $massiiv;
+  print_r($massiiv);
+
+//  print_r
+
 } else { echo "Tõeväärtus ei vasta nõuetele";}
 
  ?>
