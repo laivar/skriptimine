@@ -23,4 +23,8 @@ nende vahele saab kommenteerida ohjeldamatult
 nagu näha tegin teise rea ka kohe järgi
 */
 
+if ($bool == False){
+  echo $massiiv;
+} else { echo "Tõeväärtus ei vasta nõuetele";}
+
  ?>
