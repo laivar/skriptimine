@@ -15,18 +15,26 @@ $massiiv = array('Nimi',1974,10.12,'Perenimi');
 echo "$greetings tulemast!<br>";
 
 // echo '$greetings tulemast!';
-echo $massiiv [3];
+
+
+
+
 // kui tahan kuvada "Perenimi", siis masiivist number "3"
 
 /*
 nende vahele saab kommenteerida ohjeldamatult
 nagu näha tegin teise rea ka kohe järgi
 */
-
+// tingimuslause
 if ($bool == False){
-  print_r($massiiv);
+
+// print_r($massiiv);
 
 //  print_r
+
+for ($i 0 = 0; $i < count($massiv); $i++) {
+  echo $massiiv [$i]. *<br>;
+}
 
 } else { echo "Tõeväärtus ei vasta nõuetele";}
 
