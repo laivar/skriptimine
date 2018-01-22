@@ -1,3 +1,4 @@
+<meta charset="UTF-8" />
 
 <?php
 // tehtud Atom-i nimelise tarkvaraga
@@ -40,6 +41,7 @@ for ($i = 0; $i < count($massiiv); $i++ ) {
 }
 } else { echo "Tõeväärtus ei vasta nõuetele";}
 
+//sidusmassiivi väljatrükk
 $hinded_id = array_keys($hinded);
 for ($i=0; $i < count($hinded); $i++){
   echo $hinded_id[$i].'<br>';
@@ -50,4 +52,26 @@ for ($i=0; $i < count($hinded); $i++){
     # code...
   }
 }
+
+
+$file = fopen('counter.txt', "w") or die("Ei saanud faili avada");
+if (!$file){
+
+$txt = 1;
+
+fwrite($file,$txt);
+fclose($file);
+} else {
+$txt = fread($file, filesize('counter.txt'));
+$new_txt = $txt + 1;
+fwrite($file,$txt);
+fclose($file);
+
+}
+
+
+$file = fopen('counter.txt', "r") or die("Ei saanud faili avada");
+echo fread($file, filesize('counter.txt'));
+fclose($file);
+
  ?>
