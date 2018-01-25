@@ -18,7 +18,7 @@ $mata = 'Matemaatika';
 $fys = 'Füüsika';
 
 //sidusmassivid
-$hinded = array('Mati'=>array( $esta =>4, $mata =>4, $fys =>1),
+$hinded = array('Mati'=>array( $esta =>5, $mata =>4, $fys =>1),
                 'Kati'=>array( $esta =>3, $mata =>4, $fys =>5),
                 'Kaie'=>array( $esta =>5, $mata =>5, $fys =>5));
 
@@ -72,6 +72,9 @@ fclose($file);
 
 $file = fopen('counter.txt', "r") or die("Ei saanud faili avada");
 echo fread($file, filesize('counter.txt'));
-fclose($file);
+fclose($file). '<br>';
+
+echo "Info uuendatud";
+
 
  ?>
