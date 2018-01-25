@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "172.18.11.105",
+    "username": "root",
+    "password": "Pomatu12",
+    "port": 22,
+    "remotePath": "/var/www/skriptimine",
+    "uploadOnSave": true
+}
